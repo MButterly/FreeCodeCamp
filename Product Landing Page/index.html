@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<head id="head">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Oscar's Orchids</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<main>
+    <header id="header">
+        <div class="logo">
+            <img src="images/oscarsOrchids.png" alt="Oscar Orchid Logo" id="header-img">
+        </div>
+        <!-- Add elements here with links to the areas of the page 
+        Always stays at the top of the page -->
+        <nav id="nav-bar">
+            <ul>
+                <li><a class="nav-link" href="#Features">Features</a></li>
+                <li><a class="nav-link" href="#Care">Care</a></li>
+                <li><a class="nav-link" href="#Explore">Explore</a></li>
+            </ul>
+
+        </nav>
+    </header>
+    <body>
+        <form action="https://www.freecodecamp.com/email-submit" id="form">
+            <div class="form-group">
+                <p>Would you like to join our newsletter?</p>
+                <label for="email" id="email-label">Email</label>
+                <input 
+                    type="text"
+                    id="email"
+                    type="email"
+                    name="email"
+                    class="form-control"
+                    placeholder="Email"
+                    required
+                >
+            </div class="form-group">
+                <button type="submit" id="submit" class="submit-button">
+                    Submit
+                </button>
+            <div>
+
+            </div>
+        </form>
+        <br>
+        <div id="Features">
+            <div class="icon">
+                <img src="" alt="">
+            </div>
+            <div class="description">
+                <p>We guarantee that our plants are disease-free, vigorous, and healthy at the time of shipping. Any customers who experience trouble may call with any questions they may have.</p>
+            </div>
+        </div>
+        <div id="Care">
+            
+            <iframe 
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/mHDoyH0tRYc" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+            <caption>Miss Orchid Explains Orchid Care</caption>
+        </div>
+        <div id="Explore">
+            <div class="icon">
+                <img src="" alt="">
+            </div>
+            <div class="description">
+                We are always bringing in exciting new species for our customers (and ourselves)! If there is anything that interests you, we can try to obtain it (in accordance with applicable law).
+            </div>
+        </div>
+    </body>
+    <footer id="footer">
+
+    </footer>
+</main>
+
+<!-- TODO: CSS needs one media query, uses flexbox once, navbar stays on top -->
