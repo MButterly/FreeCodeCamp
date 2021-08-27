@@ -3,7 +3,6 @@ html {
     font-family: sans-serif;
     text-align: center;
     display: flex;
-
 }
 
 #header {
@@ -15,8 +14,17 @@ html {
     width: 100%;
 }
 
+#submit {
+    background-color: lightgreen;
+  }
+  
+#submit:hover {
+background-color: darkgreen;
+transition: background-color 1s;
+color: white;
+}
+
 #nav {
     display: flex;
-    /* flex-direction: row; */
 }
 
