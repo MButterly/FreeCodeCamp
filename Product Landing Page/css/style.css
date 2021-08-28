@@ -15,7 +15,10 @@ html {
 }
 
 #submit {
-    background-color: lightgreen;
+    background-color: rgb(78, 199, 78);
+    text-transform: uppercase;
+    width: 30%;
+    cursor: pointer;
   }
   
 #submit:hover {
