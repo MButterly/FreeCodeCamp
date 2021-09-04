@@ -1,27 +1,29 @@
-html {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+main {
     background-color: white;
     font-family: sans-serif;
     text-align: center;
-    display: flex;
 }
 
 #header {
     width: 100%;
 }
 
-.logo {
-    flex: 1 1 auto;
-    width: 100%;
-}
 
-#submit {
+
+.button {
     background-color: rgb(78, 199, 78);
     text-transform: uppercase;
     width: 30%;
     cursor: pointer;
   }
   
-#submit:hover {
+.button:hover {
 background-color: darkgreen;
 transition: background-color 1s;
 color: white;
@@ -31,3 +33,29 @@ color: white;
     display: flex;
 }
 
+#logo {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 664px) {
+    #video {
+        width: 560px; 
+        height: 315px;
+    }
+    #header-holder {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (min-width: 665px) {
+    #video {
+        width: 560px; 
+        height: 315px;
+    }
+    #header-holder {
+        width: 664px;
+        height: auto;
+    }
+}
