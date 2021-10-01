@@ -1,3 +1,6 @@
+/*Documentation Page*/
+/* Why did the scrollbar go away? */
+
 html,
 body {
   min-width: 290px;
@@ -6,12 +9,18 @@ body {
   font-family: 'Open Sans', Arial, sans-serif;
   line-height: 1.5;
   display: flex;
+  overflow: scroll;
 }
 
 header {
   color: #000;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 20px;
+}
+
+#title {
+  text-align: center;
+  font-size: 24px !important;
 }
 
 #navbar {
@@ -22,11 +31,92 @@ header {
     width: 200px;
     height: 100%;
     border-right: solid;
+    border-bottom: solid;
     border-color: rgba(0, 7, 109, 0.801);
+    overflow: auto;
+}
+
+#navbar li {
+  color: #4d4e53;
+  border-top: 1px solid;
+  list-style: none;
+  position: relative;
+  width: 100%;
+}
+
+#navbar a {
+  display: block;
+  padding: 5px 10px;
+  color: #4d4e53;
+  text-decoration: none;
 }
 
 #main-doc {
-  position: fixed;
+  position: absolute;
   top: 0px;
   left: 210px;
+  overflow: auto;
+}
+
+.main-section {
+  padding: 15px;
+}
+
+code {
+  padding: 10px;
+  display: block;
+  background-color: rgba(0, 7, 109, 0.2);
+  color: black;
+  /* font-family: 'Courier New', Courier, monospace; */
+  line-height: 2;
+}
+
+#foods, #treats {
+  list-style: none;
+  color: black;
+}
+
+footer {
+  position: fixed;
+  bottom: 0px;
+}
+
+@media only screen and (max-width: 815px) {
+  /* For mobile phones: */
+  #navbar ul {
+    height: 207px;
+  }
+
+  #navbar {
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 200px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
+  }
+
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 200px;
+    left: 10px;
+    right: 10px;
+  }
+}
+@media only screen and (max-width: 300px) {
+  #main-doc {
+    margin-left: -10px;
+  }
+
+  code {
+    width: 100%;
+    padding: 15px;
+    padding-left: 10px;
+    padding-right: 45px;
+    min-width: 100px;
+  }
 }
